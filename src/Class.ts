@@ -23,10 +23,6 @@ class UserAccont {
 
 }
 
-const jose = new UserAccont('Jose', 20);
-
-console.log(jose.getAge);
-
 
 
 

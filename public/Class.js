@@ -17,5 +17,3 @@ class UserAccont {
         this._age = age;
     }
 }
-const jose = new UserAccont('Jose', 20);
-console.log(jose.getAge);
