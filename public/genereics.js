@@ -1,17 +1,35 @@
 "use strict";
-const useState = () => {
+// S => State
+// T => Type
+// k => Key
+// v => Value
+// E => Element
+// R => Return
+// A => Array
+// O => Object
+// F => Function
+// M => Method
+// C => Class
+// I => Interface
+// D => Data
+// U => Union
+// N => Null
+// B => Boolean
+// S => String
+// N => Number
+function useState() {
     let state;
-    const getSatate = () => {
+    function getSatate() {
         return state;
-    };
-    const setState = (newState) => {
+    }
+    function setState(newState) {
         state = newState;
-    };
+    }
     return {
         getSatate,
         setState
     };
-};
+}
 console.clear();
 const newState = useState();
 newState.setState(123);

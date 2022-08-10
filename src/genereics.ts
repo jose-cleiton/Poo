@@ -1,12 +1,34 @@
+// S => State
+// T => Type
+// k => Key
+// v => Value
+// E => Element
+// R => Return
+// A => Array
+// O => Object
+// F => Function
+// M => Method
+// C => Class
+// I => Interface
+// D => Data
+// U => Union
+// N => Null
+// B => Boolean
+// S => String
+// N => Number
 
-const useState = () => {
-  let state : number | string;
+type numOrStr = number | string ;
 
-  const getSatate = () => {
+
+
+function  useState<S extends numOrStr = string>()  {
+  let state :S;
+
+ function getSatate () {
     return state;
   }
 
-  const setState = (newState: number | string) => {
+  function setState (newState:S)  {
     state = newState;
   }
 
@@ -20,7 +42,7 @@ const useState = () => {
 
 console.clear()
 
-const newState = useState();
+const newState = useState<number>();
 
 newState.setState(123);
 
