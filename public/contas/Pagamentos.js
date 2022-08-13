@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 class Pagamentos {
     constructor(conta, valor, tipo, vencimento, decricao, multa = 0.2) {
+        console.clear();
         this._conta = conta;
         this._valor = valor;
         this._tipo = tipo;

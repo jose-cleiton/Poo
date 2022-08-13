@@ -11,6 +11,7 @@ class Pagamentos {
   private _prestacao:  Array<IPrestacao>;
 
   constructor(
+    
      conta: Conta,
      valor: number,
      tipo: string, 
@@ -19,6 +20,7 @@ class Pagamentos {
      multa = 0.2,
      
      ) {
+    console.clear()
     this._conta = conta;
     this._valor = valor;
     this._tipo = tipo;
@@ -41,9 +43,6 @@ class Pagamentos {
   get valor () : number {
     return this._valor;
   }
-
-
-
 
   get tipo () : string {
     return this._tipo;
