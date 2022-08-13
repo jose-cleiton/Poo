@@ -34,5 +34,3 @@ console.clear();
 const newState = useState();
 newState.setState(123);
 console.log(newState.getSatate());
-newState.setState('Hello');
-console.log(newState.getSatate());

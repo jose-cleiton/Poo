@@ -46,6 +46,9 @@ const player: PlayerInfo = {
   
 
 }
+console.clear()
+console.log(player);
+
 
 
 

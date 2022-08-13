@@ -24,3 +24,5 @@ const player = {
     id: id,
     nickName: 'Thiago'
 };
+console.clear();
+console.log(player);
