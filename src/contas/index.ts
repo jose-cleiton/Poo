@@ -1,11 +1,14 @@
 import Conta from "./Conta";
-import Pagamentos from "./Pagamentos";
+import PagamentoBoleto from "./PagamentoBoleto";
 
-const keu = new Conta(1000);
+const keu = new Conta(150);
 
-const pagamento = new Pagamentos(keu, 100, 'credito', new Date());
+const pagamento = new PagamentoBoleto(new Date(), keu, 100, 'Pagamento de conta');
 
-console.log(pagamento.conta.saldo);
-console.log(pagamento.valor);
-console.log(keu);
+
+
+console.log(`Valor do pagamento: ${pagamento.valor}`);
+console.log(`Valor da multa: ${pagamento.multa}`);
+
+pagamento.pagar();
 
