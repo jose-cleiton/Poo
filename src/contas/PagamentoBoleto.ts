@@ -63,3 +63,4 @@ export default class PagamentoBoleto extends Pagamentos {
 
 
   }
+}
