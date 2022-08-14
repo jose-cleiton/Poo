@@ -10,4 +10,4 @@ const keu = new Conta_1.default(150);
 const pagamento = new PagamentoBoleto_1.default(new Date(), keu, 20, 'Pagamento de conta');
 const pagamentoCartao = new PagamentoCartao_1.default(keu, 100, 'Pagamento de conta');
 pagamento.pagar();
-pagamentoCartao.pagar();
+//pagamentoCartao.pagar();

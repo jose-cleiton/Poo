@@ -42,7 +42,6 @@ class PagamentoBoleto extends Pagamentos_1.default {
             this.valor = this.valor + (this.valor * this.multa);
         }
         this.conta.debito(this.valor);
-        this.conta.debito(this.valor * this.multa);
         console.log(`Saldo: ${this.conta.saldo}`);
     }
 }

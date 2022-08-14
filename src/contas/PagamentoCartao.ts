@@ -1,5 +1,7 @@
 import Pagamentos from "./Pagamentos";
 
+
+
 export default class PagamentoCartao extends Pagamentos {
   public pagar(): void {
 

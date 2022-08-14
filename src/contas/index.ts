@@ -12,5 +12,5 @@ const pagamentoCartao = new PagamentoCartao( keu, 100, 'Pagamento de conta');
 pagamento.pagar();
 
 
-pagamentoCartao.pagar();
+//pagamentoCartao.pagar();
 

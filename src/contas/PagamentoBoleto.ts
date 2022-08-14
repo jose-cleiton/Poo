@@ -49,11 +49,14 @@ export default class PagamentoBoleto extends Pagamentos {
     ;
 
     if (this.estaVencido()) {
-      this.valor = this.valor + (this.valor * this.multa);
+      
+      
+      this.valor =  this.valor + (this.valor * this.multa);
+  
     }
 
+    
     this.conta.debito(this.valor);
-    this.conta.debito(this.valor * this.multa);
     console.log(`Saldo: ${this.conta.saldo}`);
 
 
