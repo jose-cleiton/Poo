@@ -26,7 +26,7 @@ class PagamentoBoleto extends Pagamentos_1.default {
         return this._multa;
     }
     estaVencido() {
-        return (0, date_fns_1.isBefore)(this._vencimento, new Date());
+        return date_fns_1.isBefore(this._vencimento, new Date());
     }
     pagar() {
         console.log('Pagamento Boleto');
